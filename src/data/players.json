@@ -1,0 +1,169 @@
+{
+  "1": {
+    "name": "Neymar Jr",
+    "position": "ATT",
+    "club": "Al-Hilal",
+    "rating": "?",
+    "stats": {
+      "vel": "?",
+      "dri": "?",
+      "tir": "?",
+      "dif": "?",
+      "pas": "?",
+      "fis": "?"
+    },
+    "details": {
+      "height": "1.75m",
+      "weight": "68kg",
+      "preferredFoot": "Direito",
+      "age": 32,
+      "position": "Ponta Esquerda",
+      "secondaryPosition": "Meia Atacante"
+    },
+    "achievements": {
+      "goals": 292,
+      "assists": 187,
+      "matches": 492,
+      "titles": [
+        "Champions League",
+        "Copa América",
+        "Copa do Brasil",
+        "La Liga",
+        "Ligue 1"
+      ]
+    },
+    "image": "https://cdn.futbin.com/content/fifa21/img/players/p117631383.png?v=23"
+  },
+  "2": {
+    "name": "Vinicius Jr",
+    "position": "ATT",
+    "rating": 89,
+    "stats": {
+      "vel": 95,
+      "dri": 90,
+      "tir": 82,
+      "dif": 29,
+      "pas": 80,
+      "fis": 75
+    },
+    "details": {
+      "height": "1.76m",
+      "weight": "73kg",
+      "preferredFoot": "Direito",
+      "age": 23,
+      "position": "Ponta Esquerda",
+      "secondaryPosition": "Atacante"
+    },
+    "achievements": {
+      "goals": 63,
+      "assists": 71,
+      "matches": 235,
+      "titles": [
+        "Champions League",
+        "La Liga",
+        "Mundial de Clubes",
+        "Supercopa da Espanha"
+      ]
+    },
+    "image": "https://cdn.futbin.com/content/fifa21/img/players/p117631383.png?v=23"
+  },
+  "3": {
+    "name": "Rodrygo",
+    "position": "ATT",
+    "nationality": "Brasil",
+    "rating": 85,
+    "stats": {
+      "vel": 89,
+      "dri": 87,
+      "tir": 80,
+      "dif": 32,
+      "pas": 78,
+      "fis": 72
+    },
+    "details": {
+      "height": "1.74m",
+      "weight": "64kg",
+      "preferredFoot": "Direito",
+      "age": 23,
+      "position": "Ponta Direita",
+      "secondaryPosition": "Atacante"
+    },
+    "achievements": {
+      "goals": 47,
+      "assists": 39,
+      "matches": 179,
+      "titles": [
+        "Champions League",
+        "La Liga",
+        "Mundial de Clubes",
+        "Supercopa da Espanha"
+      ]
+    },
+    "image": "https://cdn.futbin.com/content/fifa21/img/players/p117631383.png?v=23"
+  },
+  "4": {
+    "name": "Endrick",
+    "position": "ATT",
+    "nationality": "Brasil",
+    "rating": 82,
+    "stats": {
+      "vel": 88,
+      "dri": 85,
+      "tir": 83,
+      "dif": 28,
+      "pas": 75,
+      "fis": 79
+    },
+    "details": {
+      "height": "1.73m",
+      "weight": "68kg",
+      "preferredFoot": "Direito",
+      "age": 17,
+      "position": "Atacante",
+      "secondaryPosition": "Segundo Atacante"
+    },
+    "achievements": {
+      "goals": 15,
+      "assists": 2,
+      "matches": 53,
+      "titles": [
+        "Brasileirão",
+        "Paulistão"
+      ]
+    },
+    "image": "https://cdn.futbin.com/content/fifa21/img/players/p117631383.png?v=23"
+  },
+  "5": {
+    "name": "Gabriel Martinelli",
+    "position": "ATT",
+    "nationality": "Brasil",
+    "club": "Arsenal",
+    "rating": 84,
+    "stats": {
+      "vel": 92,
+      "dri": 86,
+      "tir": 81,
+      "dif": 34,
+      "pas": 77,
+      "fis": 76
+    },
+    "details": {
+      "height": "1.76m",
+      "weight": "75kg",
+      "preferredFoot": "Direito",
+      "age": 22,
+      "position": "Ponta Esquerda",
+      "secondaryPosition": "Atacante"
+    },
+    "achievements": {
+      "goals": 47,
+      "assists": 29,
+      "matches": 162,
+      "titles": [
+        "FA Cup",
+        "Community Shield"
+      ]
+    },
+    "image": "https://cdn.futbin.com/content/fifa21/img/players/p117631383.png?v=23"
+  }
+} 

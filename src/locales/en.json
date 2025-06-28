@@ -1,0 +1,354 @@
+{
+  "header": {
+    "title": "GoalVision",
+    "subtitle": "The definitive platform for football performance analysis.\nTransform data into victories.",
+    "features": {
+      "analytics": "Advanced Analytics",
+      "performance": "Field Performance",
+      "strategies": "Winning Strategies"
+    }
+  },
+  "dashboard": {
+    "navigation": {
+      "dashboard": "Dashboard",
+      "yourVideos": "Your videos"
+    },
+    "userGreeting": "Welcome,",
+    "wizard": {
+      "title": "Configure Your Positions",
+      "subtitle": "Define exactly which positions you're looking for and which attributes are important",
+      "steps": {
+        "positions": "Positions",
+        "attributes": "Attributes",
+        "weights": "Importance",
+        "review": "Review"
+      },
+      "step1": {
+        "title": "Choose Positions",
+        "subtitle": "Select all positions you're looking for in your team",
+        "positions": {
+          "goalkeeper": "Goalkeeper",
+          "centerBack": "Center Back",
+          "leftBack": "Left Back",
+          "rightBack": "Right Back",
+          "defensiveMidfielder": "Defensive Midfielder",
+          "centralMidfielder": "Central Midfielder",
+          "attackingMidfielder": "Attacking Midfielder",
+          "leftWinger": "Left Winger",
+          "rightWinger": "Right Winger",
+          "striker": "Striker",
+          "centerForward": "Center Forward"
+        },
+        "tooltip": "You can select multiple positions. The system will find players that fit each one."
+      },
+      "step2": {
+        "title": "Attributes by Position",
+        "subtitle": "For each selected position, choose which attributes are important",
+        "attributes": {
+          "physical": {
+            "title": "Physical",
+            "speed": "Speed",
+            "strength": "Strength",
+            "stamina": "Stamina",
+            "agility": "Agility",
+            "jumping": "Height/Jumping"
+          },
+          "technical": {
+            "title": "Technical",
+            "passing": "Passing",
+            "shooting": "Shooting",
+            "dribbling": "Dribbling",
+            "crossing": "Crossing",
+            "firstTouch": "First Touch"
+          },
+          "tactical": {
+            "title": "Tactical",
+            "positioning": "Positioning",
+            "marking": "Marking",
+            "interceptions": "Interceptions",
+            "leadership": "Leadership",
+            "vision": "Vision"
+          },
+          "mental": {
+            "title": "Mental",
+            "concentration": "Concentration",
+            "composure": "Composure",
+            "determination": "Determination",
+            "workRate": "Work Rate",
+            "teamwork": "Teamwork"
+          }
+        },
+        "tooltips": {
+          "speed": "Running speed and acceleration",
+          "strength": "Physical strength and contact resistance",
+          "stamina": "Ability to maintain pace throughout the match",
+          "agility": "Agility and direction changes",
+          "jumping": "Height and jumping ability",
+          "passing": "Accuracy and quality of passes",
+          "shooting": "Accuracy and power of shots",
+          "dribbling": "Ability to beat opponents",
+          "crossing": "Quality of crosses",
+          "firstTouch": "Ball control on first touch",
+          "positioning": "Tactical positioning on field",
+          "marking": "Defensive marking ability",
+          "interceptions": "Ability to intercept passes",
+          "leadership": "Ability to lead the team",
+          "vision": "Vision to find spaces and teammates",
+          "concentration": "Maintaining focus during the game",
+          "composure": "Calmness under pressure",
+          "determination": "Will to win and overcome difficulties",
+          "workRate": "Dedication and effort on field",
+          "teamwork": "Ability to work as a team"
+        }
+      },
+      "step3": {
+        "title": "Importance Adjustment",
+        "subtitle": "Define how important each attribute is to you (0-100%)",
+        "importance": {
+          "low": "Low Importance",
+          "medium": "Important",
+          "high": "Very Important",
+          "critical": "Critical"
+        },
+        "explanation": "Use sliders to adjust importance. Higher weighted attributes will have more influence on final compatibility."
+      },
+      "step4": {
+        "title": "Review and Confirmation",
+        "subtitle": "Review your configuration before applying filters",
+        "selectedPositions": "Selected Positions",
+        "attributeWeights": "Attribute Weights",
+        "estimatedMatches": "Estimated Players",
+        "position": "Position",
+        "attributes": "Attributes",
+        "weights": "Weights"
+      },
+      "buttons": {
+        "next": "Next",
+        "previous": "Previous",
+        "finish": "Apply Configuration",
+        "startOver": "Start Over"
+      }
+    },
+    "playerModal": {
+      "title": "Detailed Profile",
+      "aiAnalysis": "AI Analysis",
+      "dataGeneratedBy": "Data generated by A.I",
+      "physicalAttributes": "Physical Attributes",
+      "technicalAttributes": "Technical Attributes",
+      "tacticalAttributes": "Tactical Attributes",
+      "mentalAttributes": "Mental Attributes",
+      "videos": "Videos",
+      "highlights": "Highlights",
+      "contact": "Contact",
+      "close": "Close",
+      "compatibility": "Compatibility",
+      "playerInfo": {
+        "age": "Age",
+        "position": "Position",
+        "nationality": "Nationality",
+        "height": "Height",
+        "weight": "Weight",
+        "preferredFoot": "Preferred Foot"
+      },
+      "attributes": {
+        "dribbling": "Dribbling",
+        "shooting": "Shooting",
+        "interceptions": "Interceptions",
+        "speed": "Speed",
+        "strength": "Strength",
+        "passing": "Passing",
+        "vision": "Vision",
+        "positioning": "Positioning",
+        "marking": "Marking",
+        "leadership": "Leadership",
+        "concentration": "Concentration",
+        "composure": "Composure",
+        "determination": "Determination",
+        "workRate": "Work Rate",
+        "teamwork": "Teamwork",
+        "stamina": "Stamina",
+        "agility": "Agility",
+        "jumping": "Height/Jumping",
+        "crossing": "Crossing",
+        "firstTouch": "First Touch"
+      }
+    },
+    "playersInEvaluation": {
+      "title": "Players in evaluation",
+      "compatibility": "Compatibility",
+      "viewProfile": "View Profile",
+      "sendMessage": "Send Message",
+      "noPlayersFound": "No players found with your criteria",
+      "adjustFilters": "Adjust your filters to find more players"
+    },
+    "playerStats": {
+      "goals": "Goals",
+      "assists": "Assists",
+      "speed": "Speed", 
+      "dribbles": "Dribbles",
+      "interceptions": "Interceptions",
+      "passes": "Passes"
+    }
+  },
+  "profileSelector": {
+    "title": "Choose Your Profile",
+    "subtitle": "Select how you want to use GoalVision to maximize your football potential",
+    "profiles": {
+      "player": {
+        "title": "Player",
+        "description": "Track your statistics, evolve your performance and achieve your personal goals",
+        "features": [
+          "Detailed personal statistics",
+          "Game performance analysis",
+          "Personalized goals and objectives",
+          "Comparison with other players"
+        ]
+      },
+      "coach": {
+        "title": "Coach",
+        "description": "Manage your team, analyze tactics and make strategic decisions based on data",
+        "features": [
+          "Complete team management",
+          "Advanced tactical analysis",
+          "Performance reports",
+          "Strategic planning"
+        ]
+      }
+    },
+    "selectedProfile": "Selected Profile",
+    "continueButton": "Continue as"
+  },
+  "walletConnection": {
+    "title": "Connect Wallet",
+    "subtitle": "Connect your NEAR wallet to access all platform features",
+    "nearAccount": "NEAR Account",
+    "connectWallet": "Connect Wallet",
+    "connecting": "Connecting...",
+    "connected": "Connected",
+    "walletAddress": "Wallet Address",
+    "continue": "Continue"
+  },
+  "playerInfo": {
+    "title": "Player Information",
+    "subtitle": "Complete your profile to personalize your experience",
+    "photo": "Profile Photo",
+    "uploadPhoto": "Upload Photo",
+    "changePhoto": "Change Photo",
+    "form": {
+      "name": "Name",
+      "age": "Age",
+      "dominantFoot": "Dominant Foot",
+      "position": "Position",
+      "namePlaceholder": "Enter your full name",
+      "agePlaceholder": "Enter your age",
+      "dominantFootOptions": {
+        "right": "Right",
+        "left": "Left",
+        "both": "Both"
+      },
+      "positionOptions": {
+        "goalkeeper": "Goalkeeper",
+        "defender": "Defender",
+        "midfielder": "Midfielder",
+        "forward": "Forward"
+      }
+    },
+    "save": "Save Profile",
+    "back": "Back"
+  },
+  "videoUpload": {
+    "title": "Video Analysis",
+    "subtitle": "Upload your best moments for AI analysis",
+    "categories": {
+      "highlights": {
+        "title": "Best Moments",
+        "subtitle": "Upload your best plays for analysis",
+        "video1": "Best Moment #1",
+        "video2": "Best Moment #2"
+      }
+    },
+    "requirements": {
+      "highlights": "Upload a video showing your best plays and movements"
+    },
+    "videoUploaded": "Video uploaded successfully",
+    "noVideo": "No video selected",
+    "comingSoon": "Coming Soon",
+    "unavailable": "Unavailable",
+    "analyzeVideo": "Analyze Video with A.I",
+    "uploadFirst": "Upload a video first"
+  },
+  "common": {
+    "ok": "OK"
+  },
+  "completed": {
+    "title": "Congratulations! 🎉",
+    "subtitle": "Your analysis will be done soon! Wait for our contact.",
+    "playerCard": {
+      "position": "ATT",
+      "defaultName": "PLAYER NAME",
+      "stats": {
+        "vel": "PAC",
+        "dri": "DRI",
+        "tir": "SHO",
+        "dif": "DEF",
+        "pas": "PAS",
+        "fis": "PHY"
+      }
+    }
+  },
+  "playerCard": {
+    "title": "Player Card",
+    "subtitle": "Check out the player's attributes",
+    "notFound": {
+      "title": "Player not found",
+      "description": "Could not find player with ID {id}"
+    },
+    "share": "Share Card",
+    "copied": "Link copied to clipboard!",
+    "backToHome": "Back to Home",
+    "details": {
+      "personalInfo": {
+        "title": "Personal Information",
+        "age": "Age",
+        "height": "Height",
+        "weight": "Weight",
+        "preferredFoot": "Preferred Foot",
+        "position": "Position",
+        "secondaryPosition": "Secondary Position",
+        "years": "years"
+      },
+      "careerStats": {
+        "title": "Career Statistics",
+        "goals": "Goals",
+        "assists": "Assists",
+        "matches": "Matches",
+        "titles": "Titles"
+      }
+    }
+  },
+  "chat": {
+    "title": "GOALS VISION Assistant",
+    "status": {
+      "online": "Online",
+      "alwaysOnline": "Always online"
+    },
+    "input": {
+      "placeholder": "Type your message..."
+    },
+    "emptyState": {
+      "greeting": "How can I help you today?"
+    },
+    "navigation": {
+      "backToDashboard": "Back to Dashboard",
+      "newChat": "New chat"
+    }
+  },
+  "playerIdModal": {
+    "title": "Player Identification",
+    "inputLabel": "Player ID",
+    "inputPlaceholder": "Enter the player ID",
+    "cancel": "Cancel",
+    "analyze": "Analyze",
+    "previewText": "View detailed player performance analysis"
+  }
+} 
