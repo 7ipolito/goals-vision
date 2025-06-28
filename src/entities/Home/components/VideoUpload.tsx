@@ -16,7 +16,11 @@ interface VideoData {
   };
 }
 
-export function VideoUpload() {
+interface VideoUploadProps {
+  onBack: () => void;
+}
+
+export function VideoUpload({ onBack }: VideoUploadProps) {
   const { t } = useTranslation();
   const [videoData, setVideoData] = useState<VideoData>({
     highlights: {
@@ -73,6 +77,21 @@ export function VideoUpload() {
   return (
     <div className="min-h-screen flex items-center justify-center p-4">
       <div className="max-w-6xl w-full">
+        {/* Back Button */}
+        <div className="absolute top-4 left-4">
+          <button
+            onClick={onBack}
+            className="bg-white/10 hover:bg-white/20 text-white font-medium py-2 px-4 rounded-lg transition-all duration-300 flex items-center gap-2 transform hover:scale-105 hover:shadow-lg active:scale-95 group backdrop-blur-sm border border-white/20"
+          >
+            <span className="text-lg transition-transform duration-200 group-hover:-translate-x-1">
+              ←
+            </span>
+            <span className="transition-all duration-200 group-hover:tracking-wider">
+              {t("common.back")}
+            </span>
+          </button>
+        </div>
+
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-white mb-4">

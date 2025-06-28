@@ -8,7 +8,6 @@ import {
   ProfileSelector,
   PlayerInfo,
   VideoUpload,
-  LanguageSelector,
   PlayerCard,
 } from "../../entities/Home/components";
 import { useTranslation } from "../../hooks/useTranslation";

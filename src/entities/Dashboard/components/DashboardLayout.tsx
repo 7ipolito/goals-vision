@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { useTranslation } from "../../../hooks/useTranslation";
-import { LanguageSelector } from "../../Home/components/LanguageSelector";
 import Link from "next/link";
 
 interface DashboardLayoutProps {

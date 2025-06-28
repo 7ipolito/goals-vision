@@ -5,6 +5,7 @@ import { useTranslation } from "../../../hooks/useTranslation";
 import { UserFormData, DominantFoot, Position } from "../../../types/user";
 import { createUser } from "../../../lib/actions/user.action";
 import { UploadButton } from "../../../utils/uploadthing";
+import Image from "next/image";
 
 interface PlayerInfoProps {
   onComplete: (data: UserFormData) => void;
@@ -118,9 +119,11 @@ export function PlayerInfo({ onComplete, onBack }: PlayerInfoProps) {
                 <div className="w-48 h-48 mx-auto bg-white/5 border-2 border-dashed border-white/30 rounded-lg flex items-center justify-center mb-4">
                   {playerData.photo ? (
                     <div className="text-center">
-                      <img
+                      <Image
                         src={playerData.photo}
                         alt="Foto do perfil"
+                        width={192}
+                        height={192}
                         className="w-full h-full object-cover rounded-lg"
                       />
                     </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslation } from "../../../hooks/useTranslation";
+import Image from "next/image";
 
 interface PlayerCardProps {
   name: string;
@@ -55,9 +56,11 @@ export function PlayerCard({
           {/* Avatar */}
           <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center">
             {avatar ? (
-              <img
+              <Image
                 src={avatar}
                 alt={name}
+                width={48}
+                height={48}
                 className="w-full h-full rounded-lg object-cover"
               />
             ) : (

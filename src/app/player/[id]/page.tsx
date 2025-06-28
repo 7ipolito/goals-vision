@@ -3,6 +3,7 @@
 import { useParams, useRouter } from "next/navigation";
 import { useTranslation } from "../../../hooks/useTranslation";
 import playerData from "../../../data/players.json";
+import Image from "next/image";
 
 export default function PlayerPage() {
   const { t } = useTranslation();
@@ -59,13 +60,13 @@ export default function PlayerPage() {
           </div>
         </div>
 
-        {/* Nation Flag and Club Logo */}
-
         {/* Player Image */}
         <div className="w-48 h-48 mx-auto mb-4 rounded-lg overflow-hidden relative z-10 transform transition-all duration-300 group-hover:scale-105">
-          <img
+          <Image
             src={player.image}
             alt={player.name}
+            width={192}
+            height={192}
             className="w-full h-full object-cover transition-all duration-500 group-hover:brightness-110 group-hover:contrast-110"
           />
           {/* Image glow effect */}

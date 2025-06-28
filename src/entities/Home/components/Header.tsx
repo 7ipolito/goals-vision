@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslation } from "../../../hooks/useTranslation";
+import Image from "next/image";
 
 interface HeaderProps {
   className?: string;
@@ -12,7 +13,14 @@ export function Header({ className = "" }: HeaderProps) {
   return (
     <header className={`text-center px-4 py-8 md:py-16 ${className}`}>
       <div className="flex justify-center mb-6">
-        <img src="/logo.png" alt="GoalVision" className="h-12 md:h-16" />
+        <Image
+          src="/logo.png"
+          alt="GoalVision"
+          width={64}
+          height={64}
+          className="h-12 md:h-16 w-auto"
+          priority
+        />
       </div>
       <p className="text-base md:text-xl text-gray-200 mb-6 md:mb-8 max-w-sm md:max-w-2xl mx-auto whitespace-pre-line">
         {t("header.subtitle")}

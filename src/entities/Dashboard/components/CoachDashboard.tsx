@@ -13,8 +13,32 @@ interface WizardConfig {
   attributeWeights: Record<string, number>;
 }
 
+interface Player {
+  id: number;
+  name: string;
+  compatibility: number;
+  position: string;
+  age: number;
+  nationality: string;
+  stats: {
+    goals?: number;
+    assists?: number;
+    speed?: number;
+    dribbles?: number;
+    interceptions?: number;
+    passes?: number;
+  };
+  attributes: Record<string, number>;
+  details?: {
+    height?: string;
+    weight?: string;
+    preferredFoot?: string;
+    photo?: string;
+  };
+}
+
 // Mock data for famous players with more detailed stats
-const mockPlayers = [
+const mockPlayers: Player[] = [
   {
     id: 1,
     name: "Mohamed Salah",
@@ -82,6 +106,7 @@ const mockPlayers = [
     compatibility: 64,
     position: "Ponta Esquerda",
     age: 32,
+    nationality: "Brasil",
     stats: { goals: 15, assists: 18, speed: 89, dribbles: 96 },
     attributes: {
       dribbling: 96,
@@ -206,11 +231,9 @@ export function CoachDashboard() {
   const [filteredPlayers, setFilteredPlayers] = useState(mockPlayers);
   const [showWizard, setShowWizard] = useState(false);
   const [wizardConfig, setWizardConfig] = useState<WizardConfig | null>(null);
-  const [selectedPlayer, setSelectedPlayer] = useState<
-    (typeof mockPlayers)[0] | null
-  >(null);
+  const [selectedPlayer, setSelectedPlayer] = useState<Player | null>(null);
 
-  const calculateCompatibility = (player: any, config: WizardConfig) => {
+  const calculateCompatibility = (player: Player, config: WizardConfig) => {
     if (!config.selectedPositions.length) return player.compatibility;
 
     let totalScore = 0;

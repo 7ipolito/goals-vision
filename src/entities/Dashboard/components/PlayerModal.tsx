@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslation } from "../../../hooks/useTranslation";
+import Image from "next/image";
 
 interface PlayerModalProps {
   player: {
@@ -137,9 +138,11 @@ export function PlayerModal({ player, onClose }: PlayerModalProps) {
               <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-6 text-center">
                 <div className="w-48 h-48 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center">
                   {player.details?.photo ? (
-                    <img
+                    <Image
                       src={player.details.photo}
                       alt={player.name}
+                      width={192}
+                      height={192}
                       className="w-full h-full rounded-2xl object-cover"
                     />
                   ) : (
