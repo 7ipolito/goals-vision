@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ginga Test - MediaPipe Demo</title>
+    <title>Teste de Gingado - MediaPipe Demo</title>
     <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
@@ -105,14 +105,14 @@
 <body>
     <div class="container">
         <h1 class="text-4xl font-bold text-white text-center mb-2">
-            🤸‍♂️ Ginga Test
+            🤸‍♂️ Teste de Gingado
         </h1>
         <p class="text-xl text-gray-300 text-center mb-8">
-            Agility and coordination analysis using MediaPipe
+            Análise de agilidade e coordenação usando MediaPipe
         </p>
 
         <div id="status" class="status-loading">
-            Loading AI model...
+            Carregando modelo de IA...
         </div>
 
         <div class="video-container">
@@ -123,76 +123,65 @@
         <div class="flex flex-col gap-4 mt-6">
             <div class="text-center">
                 <label for="video-upload" class="btn cursor-pointer inline-block" id="uploadLabel">
-                    📹 Select Video
+                    📹 Selecionar Vídeo
                 </label>
                 <input type="file" id="video-upload" accept="video/*" style="display: none;">
                 <p class="text-gray-300 text-sm mt-2" id="upload-status">
-                    Select a video to analyze ginga movements
+                    Selecione um vídeo para analisar o gingado
                 </p>
             </div>
             
             <div class="flex justify-center gap-4" id="controls" style="display: none;">
                 <button id="analyzeBtn" class="btn" disabled>
-                    🚀 Analyze Video
+                    🚀 Analisar Vídeo
                 </button>
                 <button id="resetBtn" class="btn">
-                    🔄 Change Video
+                    🔄 Trocar Vídeo
                 </button>
                 <button id="stopBtn" class="btn" disabled style="display: none;">
-                    ⏹️ Stop Analysis
+                    ⏹️ Parar Análise
                 </button>
             </div>
         </div>
 
         <div class="results-panel">
-            <h3 class="text-2xl font-bold mb-4 text-center">📊 Analysis Results</h3>
+            <h3 class="text-2xl font-bold mb-4 text-center">📊 Resultados da Análise</h3>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
                 <div class="stat-card">
-                    <div class="text-3xl font-bold" id="max-distance">0m</div>
-                    <div class="text-sm text-gray-300">Maximum Distance</div>
+                    <div class="text-3xl font-bold" id="max-distance">31.2m</div>
+                    <div class="text-sm text-gray-300">Distância Máxima</div>
                 </div>
                 <div class="stat-card">
-                    <div class="text-3xl font-bold" id="avg-speed">0</div>
-                    <div class="text-sm text-gray-300">Average Speed (km/h)</div>
+                    <div class="text-3xl font-bold" id="avg-speed">130.6</div>
+                    <div class="text-sm text-gray-300">Velocidade Média (km/h)</div>
                 </div>
                 <div class="stat-card">
                     <div class="text-3xl font-bold" id="analysis-time">0s</div>
-                    <div class="text-sm text-gray-300">Analysis Time</div>
+                    <div class="text-sm text-gray-300">Tempo de Análise</div>
                 </div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
                 <div class="stat-card">
-                    <div class="text-3xl font-bold" id="lateral-movements">0</div>
-                    <div class="text-sm text-gray-300">Lateral Movements</div>
+                    <div class="text-3xl font-bold" id="lateral-movements">12</div>
+                    <div class="text-sm text-gray-300">Movimentos Laterais</div>
                 </div>
                 <div class="stat-card">
-                    <div class="text-3xl font-bold" id="coordination-score">0%</div>
-                    <div class="text-sm text-gray-300">Coordination</div>
+                    <div class="text-3xl font-bold" id="coordination-score">85%</div>
+                    <div class="text-sm text-gray-300">Coordenação</div>
                 </div>
                 <div class="stat-card">
-                    <div class="text-3xl font-bold" id="agility-score">0%</div>
-                    <div class="text-sm text-gray-300">Agility</div>
+                    <div class="text-3xl font-bold" id="agility-score">92%</div>
+                    <div class="text-sm text-gray-300">Agilidade</div>
                 </div>
             </div>
 
-            <!-- View Player Details Button -->
-            <div id="viewPlayerButton" class="text-center mt-8" style="display: none;">
-                <button 
-                    onclick="window.location.href='/player/1'"
-                    class="bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white py-4 px-8 rounded-lg font-bold text-xl transition-all duration-200 shadow-lg hover:scale-105 flex items-center gap-3 mx-auto"
-                >
-                    <span class="text-2xl">👤</span>
-                    View Player Details
-                </button>
-            </div>
-
-            <div class="text-center mt-8">
-                <h4 class="text-lg font-semibold mb-2">🎯 Instructions</h4>
+            <div class="text-center">
+                <h4 class="text-lg font-semibold mb-2">🎯 Instruções</h4>
                 <p class="text-gray-300 text-sm">
-                    Upload a video with lateral movements, dribbles, and direction changes!<br>
-                    Make sure your whole body is visible in the video for better accuracy.
+                    Envie um vídeo com movimentos laterais, dribles e mudanças de direção!<br>
+                    Certifique-se que todo o corpo está visível no vídeo para melhor precisão.
                 </p>
             </div>
         </div>
@@ -213,8 +202,13 @@
 
         // Get URL parameters
         const urlParams = new URLSearchParams(window.location.search);
-        const maxDistance = parseFloat(urlParams.get('maxDistance')) || 0;
-        const avgSpeed = parseFloat(urlParams.get('avgSpeed')) || 0;
+        const maxDistance = urlParams.get('maxDistance') || '31.2';
+        const avgSpeed = urlParams.get('avgSpeed') || '130.6';
+        const playerId = urlParams.get('playerId') || '1';
+
+        // Set initial values from URL parameters
+        document.getElementById('max-distance').textContent = maxDistance + 'm';
+        document.getElementById('avg-speed').textContent = avgSpeed;
 
         let pose = null;
         let isAnalyzing = false;
@@ -222,16 +216,10 @@
         let movementData = [];
 
         // Resultados elementos
-        const maxDistanceEl = document.getElementById('max-distance');
-        const avgSpeedEl = document.getElementById('avg-speed');
         const lateralMovementsEl = document.getElementById('lateral-movements');
         const coordinationScoreEl = document.getElementById('coordination-score');
         const agilityScoreEl = document.getElementById('agility-score');
         const analysisTimeEl = document.getElementById('analysis-time');
-
-        // Initialize stats from URL parameters
-        maxDistanceEl.textContent = maxDistance + 'm';
-        avgSpeedEl.textContent = avgSpeed;
 
         function updateStatus(message, className) {
             statusElement.textContent = message;
@@ -328,7 +316,6 @@
         function calculateResults() {
             if (movementData.length < 2) return;
 
-            // Use URL parameters for these values
             const lateralMovements = 12;
             const coordinationScore = 85;
             const agilityScore = 92;
@@ -340,80 +327,136 @@
             agilityScoreEl.textContent = agilityScore + '%';
             analysisTimeEl.textContent = analysisTime + 's';
 
-            // Show the View Player Details button
-            document.getElementById('viewPlayerButton').style.display = 'block';
+            // Wait 2 seconds before redirecting to show the results
+            setTimeout(() => {
+                window.location.href = `/player/1`;
+            }, 2000);
+
+            // Wait 2 seconds before redirecting to show the results
+            setTimeout(() => {
+                window.location.href = `/player/1`;
+            }, 2000);
         }
 
-        // Initialize MediaPipe
-        async function initializePose() {
-            try {
-                pose = new Pose({
-                    locateFile: (file) => {
-                        return `https://cdn.jsdelivr.net/npm/@mediapipe/pose/${file}`;
-                    }
-                });
-
-                pose.setOptions({
-                    modelComplexity: 1,
-                    smoothLandmarks: true,
-                    enableSegmentation: false,
-                    smoothSegmentation: false,
-                    minDetectionConfidence: 0.5,
-                    minTrackingConfidence: 0.5
-                });
-
-                pose.onResults(onResults);
-
-                updateStatus('AI model ready!', 'status-ready');
-                uploadLabel.style.opacity = '1';
-                uploadLabel.style.pointerEvents = 'auto';
-            } catch (error) {
-                console.error('Error initializing MediaPipe:', error);
-                updateStatus('Error loading AI model', 'status-error');
-            }
-        }
-
-        // Video upload handling
-        videoUpload.addEventListener('change', (e) => {
-            const file = e.target.files?.[0];
-            if (file && file.type.startsWith('video/')) {
-                const url = URL.createObjectURL(file);
-                videoElement.src = url;
-                controls.style.display = 'flex';
-                analyzeBtn.disabled = false;
-                uploadStatus.textContent = 'Video loaded successfully!';
-                updateStatus('Video ready for analysis', 'status-ready');
+        // Inicializar MediaPipe
+        pose = new Pose({
+            locateFile: (file) => {
+                return `https://cdn.jsdelivr.net/npm/@mediapipe/pose/${file}`;
             }
         });
 
-        // Analysis controls
+        pose.setOptions({
+            modelComplexity: 1,
+            smoothLandmarks: true,
+            enableSegmentation: false,
+            smoothSegmentation: true,
+            minDetectionConfidence: 0.5,
+            minTrackingConfidence: 0.5
+        });
+
+        pose.onResults(onResults);
+
+        pose.initialize().then(() => {
+            updateStatus('Modelo carregado! Selecione um vídeo para analisar', 'status-ready');
+            uploadLabel.classList.remove('disabled');
+            uploadLabel.style.opacity = '1';
+            uploadLabel.style.pointerEvents = 'auto';
+        });
+
+        // Event listeners
+        videoUpload.addEventListener('change', (event) => {
+            const file = event.target.files[0];
+            if (file && file.type.startsWith('video/')) {
+                const videoUrl = URL.createObjectURL(file);
+                videoElement.src = videoUrl;
+                
+                videoElement.onloadeddata = () => {
+                    controls.style.display = 'flex';
+                    analyzeBtn.disabled = false;
+                    uploadStatus.textContent = `Vídeo carregado: ${file.name}`;
+                    updateStatus('Vídeo carregado! Clique em "Analisar Vídeo" para começar', 'status-ready');
+                };
+                
+                videoElement.onerror = () => {
+                    updateStatus('Erro ao carregar o vídeo. Tente outro arquivo.', 'status-loading');
+                };
+            } else {
+                updateStatus('Por favor, selecione um arquivo de vídeo válido.', 'status-loading');
+            }
+        });
+
+        resetBtn.addEventListener('click', () => {
+            videoElement.src = '';
+            videoUpload.value = '';
+            controls.style.display = 'none';
+            isAnalyzing = false;
+            movementData = [];
+            
+            // Reset resultados
+            lateralMovementsEl.textContent = '0';
+            coordinationScoreEl.textContent = '0%';
+            agilityScoreEl.textContent = '0%';
+            analysisTimeEl.textContent = '0s';
+            
+            uploadStatus.textContent = 'Selecione um vídeo para analisar o gingado';
+            updateStatus('Modelo carregado! Selecione um vídeo para analisar', 'status-ready');
+        });
+
         analyzeBtn.addEventListener('click', () => {
             isAnalyzing = true;
             analysisStartTime = Date.now();
             movementData = [];
-            analyzeBtn.style.display = 'none';
-            stopBtn.style.display = 'inline-flex';
-            stopBtn.disabled = false;
-            updateStatus('Analyzing movements...', 'status-analyzing');
+            
+            // Reiniciar vídeo do início
             videoElement.currentTime = 0;
             videoElement.play();
+            
+            analyzeBtn.disabled = true;
+            resetBtn.disabled = true;
+            stopBtn.disabled = false;
+            stopBtn.style.display = 'inline-block';
+            
+            updateStatus('Analisando vídeo... Aguarde o processamento!', 'status-analyzing');
+            
+            // Função para processar frames do vídeo
+            const processFrame = () => {
+                if (!isAnalyzing || videoElement.ended) {
+                    isAnalyzing = false;
+                    analyzeBtn.disabled = false;
+                    resetBtn.disabled = false;
+                    stopBtn.disabled = true;
+                    stopBtn.style.display = 'none';
+                    updateStatus('Análise concluída! Veja os resultados abaixo.', 'status-ready');
+                    calculateResults();
+                    return;
+                }
+                
+                if (videoElement.paused || videoElement.seeking) {
+                    requestAnimationFrame(processFrame);
+                    return;
+                }
+                
+                // Processar frame atual
+                pose.send({image: videoElement}).then(() => {
+                    if (isAnalyzing) {
+                        requestAnimationFrame(processFrame);
+                    }
+                });
+            };
+            
+            processFrame();
         });
 
         stopBtn.addEventListener('click', () => {
             isAnalyzing = false;
             videoElement.pause();
-            analyzeBtn.style.display = 'inline-flex';
+            
+            analyzeBtn.disabled = false;
+            resetBtn.disabled = false;
+            stopBtn.disabled = true;
             stopBtn.style.display = 'none';
-            updateStatus('Analysis completed! See results below.', 'status-ready');
-            calculateResults();
+            updateStatus('Análise interrompida! Veja os resultados parciais abaixo.', 'status-ready');
         });
-
-        resetBtn.addEventListener('click', () => {
-            location.reload();
-        });
-
-        // Initialize
-        initializePose();
     </script>
 </body>
 </html> 

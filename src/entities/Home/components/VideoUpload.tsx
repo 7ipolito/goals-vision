@@ -4,7 +4,6 @@ import { useState } from "react";
 import { useTranslation } from "../../../hooks/useTranslation";
 import { UploadButton } from "../../../utils/uploadthing";
 import { PlayerIdModal } from "./PlayerIdModal";
-import { useRouter } from "next/navigation";
 
 interface VideoData {
   highlights: {
@@ -19,7 +18,6 @@ interface VideoData {
 
 export function VideoUpload() {
   const { t } = useTranslation();
-  const router = useRouter();
   const [videoData, setVideoData] = useState<VideoData>({
     highlights: {
       video1: { uploaded: false },
@@ -68,12 +66,7 @@ export function VideoUpload() {
         playerId
       )}&maxDistance=31.2&avgSpeed=130.6`;
       window.open(demoUrl, "_blank");
-
       setIsModalOpen(false);
-
-      setTimeout(() => {
-        router.push("/player/1");
-      }, 500);
     }
   };
 
@@ -154,10 +147,10 @@ export function VideoUpload() {
                     }}
                     content={{
                       button: isUploading.video1
-                        ? "Loading..."
+                        ? "Carregando..."
                         : videoData.highlights.video1.uploaded
-                        ? "Change Video"
-                        : "Upload Video",
+                        ? "Alterar Vídeo"
+                        : "Carregar Vídeo",
                     }}
                   />
                 </div>
@@ -174,7 +167,7 @@ export function VideoUpload() {
                     <div className="text-center">
                       <div className="text-4xl mb-2 text-gray-500">🔒</div>
                       <p className="text-gray-500 text-sm">
-                        {t("videoUpload.comingSoon") || "Coming Soon"}
+                        {t("videoUpload.comingSoon")}
                       </p>
                     </div>
                   </div>
@@ -183,7 +176,7 @@ export function VideoUpload() {
                     disabled
                     className="w-full bg-gray-600 text-gray-400 py-3 px-4 rounded-lg cursor-not-allowed"
                   >
-                    {t("videoUpload.unavailable") || "Unavailable"}
+                    {t("videoUpload.unavailable")}
                   </button>
                 </div>
               </div>
@@ -206,8 +199,8 @@ export function VideoUpload() {
                   {videoData.highlights.video1.uploaded ? "🤖" : "🔒"}
                 </span>
                 {videoData.highlights.video1.uploaded
-                  ? t("videoUpload.analyzeVideo") || "Analyze Video with A.I"
-                  : t("videoUpload.uploadFirst") || "Upload a video first"}
+                  ? t("videoUpload.analyzeVideo")
+                  : t("videoUpload.uploadFirst")}
               </div>
             </button>
           </div>

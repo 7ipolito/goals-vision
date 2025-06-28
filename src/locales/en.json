@@ -257,25 +257,37 @@
     "back": "Back"
   },
   "videoUpload": {
-    "title": "Video Analysis",
-    "subtitle": "Upload your best moments for AI analysis",
+    "title": "Video Upload",
+    "subtitle": "Upload videos for complete performance analysis",
     "categories": {
       "highlights": {
         "title": "Best Moments",
-        "subtitle": "Upload your best plays for analysis",
+        "subtitle": "2 videos of your best plays and moves",
         "video1": "Best Moment #1",
         "video2": "Best Moment #2"
+      },
+      "gingado": {
+        "title": "Next Step",
+        "subtitle": "2 additional videos to complete your evaluation",
+        "video1": "Video #1",
+        "video2": "Video #2"
       }
     },
+    "uploadVideo": "Upload Video",
+    "changeVideo": "Change Video",
+    "videoUploaded": "Video uploaded",
+    "noVideo": "No video",
+    "submit": "Submit Request",
+    "back": "Back",
+    "successMessage": "Done! Your request has been submitted!\nWait until we give you our\ntotally fair feedback ✅",
     "requirements": {
-      "highlights": "Upload a video showing your best plays and movements"
+      "highlights": "Recommended duration: 2-5 minutes each",
+      "gingado": "Recommended duration: 15-45 seconds each - upload additional videos as requested"
     },
-    "videoUploaded": "Video uploaded successfully",
-    "noVideo": "No video selected",
-    "comingSoon": "Coming Soon",
-    "unavailable": "Unavailable",
     "analyzeVideo": "Analyze Video with A.I",
-    "uploadFirst": "Upload a video first"
+    "uploadFirst": "Upload a video first",
+    "comingSoon": "Coming Soon",
+    "unavailable": "Unavailable"
   },
   "common": {
     "ok": "OK"
