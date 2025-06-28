@@ -1,3 +1,106 @@
+# GoalVision - Football Performance Analytics
+
+A plataforma definitiva para análise de desempenho no futebol. Transforme dados em vitórias.
+
+## 🚀 Características
+
+- **Análises Avançadas**: Estatísticas detalhadas e insights profundos
+- **Performance em Campo**: Monitoramento em tempo real 
+- **Estratégias Vencedoras**: Decisões baseadas em dados
+
+## 🌍 Idiomas Suportados
+
+- 🇧🇷 Português
+- 🇺🇸 English
+
+## 🏗️ Arquitetura
+
+O projeto segue uma arquitetura bem estruturada com separação de responsabilidades:
+
+```
+src/
+├── app/                    # Next.js App Router
+├── contexts/              # React Contexts (Language)
+├── entities/              # Componentes de domínio
+│   └── Home/
+│       └── components/    # Componentes específicos da Home
+├── hooks/                 # Custom hooks
+├── locales/              # Arquivos de tradução
+├── types/                # Definições de tipos TypeScript
+└── views/                # Views/Páginas da aplicação
+```
+
+## 🎯 Perfis de Usuário
+
+### Jogador ⚽
+- Estatísticas pessoais detalhadas
+- Análise de performance por jogo
+- Metas e objetivos personalizados
+- Comparação com outros jogadores
+
+### Técnico 📋
+- Gestão completa da equipe
+- Análise tática avançada
+- Relatórios de desempenho
+- Planejamento estratégico
+
+## 🛠️ Tecnologias
+
+- **Next.js 15** - Framework React
+- **TypeScript** - Tipagem estática
+- **Tailwind CSS** - Estilização
+- **React Context** - Gerenciamento de estado
+- **Internacionalização** - Sistema i18n customizado
+
+## 🚀 Como Executar
+
+```bash
+# Instalar dependências
+npm install
+
+# Executar em modo de desenvolvimento
+npm run dev
+
+# Build para produção
+npm run build
+
+# Executar versão de produção
+npm start
+```
+
+## 📝 Sistema de Tradução
+
+O sistema de tradução é baseado em arquivos JSON localizados em `src/locales/`:
+
+- `pt.json` - Traduções em português
+- `en.json` - Traduções em inglês
+
+### Como usar traduções:
+
+```tsx
+import { useTranslation } from '../hooks/useTranslation';
+
+function MyComponent() {
+  const { t } = useTranslation();
+  
+  return <h1>{t('header.title')}</h1>;
+}
+```
+
+## 🎨 Design System
+
+- **Cores**: Paleta azul e verde com gradientes
+- **Tipografia**: Geist Sans e Geist Mono
+- **Efeitos**: Glassmorphism e backdrop blur
+- **Animações**: Smooth transitions e hover effects
+
+## 📱 Responsividade
+
+O design é totalmente responsivo, adaptando-se a:
+- Desktop (1024px+)
+- Tablet (768px - 1023px) 
+- Mobile (320px - 767px)
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
